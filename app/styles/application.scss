@@ -1,0 +1,48 @@
+@import "vendor/styles/_bootstrap";
+
+.icon-todo {
+  @extend .icon-check;
+}
+.icon-contact {
+  @extend .icon-user;
+}
+.icon-deal {
+  @extend .icon-briefcase;
+}
+.icon-meeting {
+  @extend .icon-calendar;
+}
+.icon-campaign {
+  @extend .icon-globe;
+}
+.icon-invitation {
+  @extend .icon-plus;
+}
+.icon-email {
+  @extend .icon-envelope;
+}
+.icon-phone_call {
+  @extend .icon-comment;
+}
+.icon-sms {
+  @extend .icon-bullhorn
+}
+.icon-note {
+  @extend .icon-file;
+}
+.icon-call_list {
+  @extend .icon-list-alt;
+}
+
+body {
+  padding-top: 75px;
+}
+table {
+  tr {
+    td {
+      &.kind {
+        width: 100%;
+      }
+    }
+  }
+}

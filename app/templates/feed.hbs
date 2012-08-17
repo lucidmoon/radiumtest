@@ -1,0 +1,49 @@
+<h2>Datebook</h2>
+<table class="table">
+<thead>
+	<tr>
+		<th></th>
+		<th>Id</th>
+		<th>Timestamp</th>
+		<th>Kind</th>
+		<th>Tag</th>
+	</tr>
+</thead>
+{{#each datebook}}
+<tbody>
+	<tr>
+		<td><i class="icon-{{unbound kind}}" /></td>
+		<td>{{id}}</td>
+		<td>{{timestamp}}</td>		
+		<td class="kind">
+			{{kind}}
+		</td>
+		<td><span class="label">{{tag}}</span></td>
+	</tr>
+</tbody>
+{{/each}}
+<table>
+
+<h2>History</h2>
+<table class="table">
+<thead>
+	<tr>
+		<th></th>
+		<th>Id</th>
+		<th>Kind</th>
+		<th>Tag</th>
+	</tr>
+</thead>
+{{#each history}}
+<tbody>
+	<tr>
+		<td><i class="icon-{{unbound kind}}" /></td>
+		<td>{{id}}</td>
+		<td class="kind">
+			{{kind}}
+		</td>
+		<td><span class="label">{{tag}}</span></td>
+	</tr>
+</tbody>
+{{/each}}
+<table>
